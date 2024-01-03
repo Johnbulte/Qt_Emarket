@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rec/welcomePage.png</file>
+        <file>rec/8418293.png</file>
+        <file>rec/8418293_Mesa de trabajo 1.jpg</file>
+        <file>rec/9878764.jpg</file>
+    </qresource>
+</RCC>
