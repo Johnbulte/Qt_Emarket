@@ -22,7 +22,6 @@ FormRegister::FormRegister(QWidget *parent) :
             border-bottom: 2px solid blue}");
     ui->btnRegister->setFixedSize(150,32);
     ui->btnRegister->setStyleSheet("border:none;color:white;background-color:blue;border-radius:10px");
-
 }
 
 FormRegister::~FormRegister()
