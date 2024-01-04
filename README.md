@@ -1,18 +1,18 @@
 # 一款基于Qt+Mysql的网上商城软件
 1. 编译Mysql驱动；
 （整个编译过程有点复杂，请耐心看完）==
-1.   在[MySQL官网](https://dev.mysql.com/downloads/mysql/)下载相应版本的MySQL，这里使用最新版本进行演示。
+2.   在[MySQL官网](https://dev.mysql.com/downloads/mysql/)下载相应版本的MySQL，这里使用最新版本进行演示。
 
 ![image-20240101200656500](https://gitee.com/minghenjiujie/picgo-md/raw/master/image-20240101200656500.png)
 
-2.   选择一个版本进行下载，这里建议选择MSI的安装程序。
-3.   提示需要登录账号，这里选择最下面的直接下载。
+3.   选择一个版本进行下载，这里建议选择MSI的安装程序。
+4.   提示需要登录账号，这里选择最下面的直接下载。
 
 ![image-20240101200830767](https://gitee.com/minghenjiujie/picgo-md/raw/master/image-20240101200830767.png)
 
-4.   双击下载的安装程序进行安装，安装步骤和配置方法网上教程有很多，这里就不详细介绍了。
-5.   配置好MySQL后，启动MySQL服务。
-6.   打开CMD测试MySQL是否可以正常使用。**输入mysql -u你的用户名 -p密码**，出现以下界面及说明安装成功。
+5.   双击下载的安装程序进行安装，安装步骤和配置方法网上教程有很多，这里就不详细介绍了。
+6.   配置好MySQL后，启动MySQL服务。
+7.   打开CMD测试MySQL是否可以正常使用。**输入mysql -u你的用户名 -p密码**，出现以下界面及说明安装成功。
 
 ![image-20240101201209784](https://gitee.com/minghenjiujie/picgo-md/raw/master/image-20240101201209784.png)
 
@@ -115,7 +115,7 @@ Widget::~Widget()
 
 ![image-20240101210654823](https://gitee.com/minghenjiujie/picgo-md/raw/master/image-20240101210654823.png)
 
-3. 使用Qt命令操作mysql数据库；
+4. 使用Qt命令操作mysql数据库；
 5. 登录界面的实现；
 6. 实现登录界面的账密判断；
 7. 注册界面的实现；
@@ -123,8 +123,10 @@ Widget::~Widget()
 
 ## 登录界面
 ![image](https://github.com/Johnbulte/Qt_Emarket/assets/39647360/ce727885-e7ef-41c3-88bb-3c775430450a)
+
 ## 登录成功后显示
 ![image](https://github.com/Johnbulte/Qt_Emarket/assets/39647360/8ff277fc-56e7-49bc-bb35-61f50f59a556)
+
 ## 登录失败后显示
 ![image](https://github.com/Johnbulte/Qt_Emarket/assets/39647360/c1879116-b6b4-40c2-bbe0-377e5ee0e6e2)
 
