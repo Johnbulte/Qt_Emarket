@@ -42,7 +42,7 @@ QString login::strToMd5(QString str)
 {
     QString strMd5;
     QByteArray qba;
-    qba = QCryptographicHash::hash(str.toLatin1(),QCryptographicHash::Md5);
+    qba = QCryptographicHash::hash(str.toLatin1(),QCryptographicHash::Md5); // 支持的加密算法有很多
     strMd5.append(qba.toHex());
     return strMd5;
 }
@@ -50,6 +50,7 @@ QString login::strToMd5(QString str)
 // 注册功能的实现
 void login::on_btnRegister_clicked()
 {
+    // 创建一个新界面对象，并通过点击注册按钮调用新窗口
     FormRegister *formregister = new FormRegister;
     formregister->show();
 }
@@ -67,7 +68,10 @@ void login::on_btnLogin_clicked()
         query.exec("SELECT `Password` FROM member WHERE MermberID='" + ui->editUserName->text() + "'");
         query.next();
 
+        // 将得到的文本通过strToMd5算法转为Md5格式
         QString pwdMD5 = strToMd5(ui->editPassword->text());
+
+        // 通过与数据库查询的结果进行匹配，如果相等则通过验证
         if(query.value(0).toString() == pwdMD5)
         {
             QMessageBox::information(this,"欢迎回来","欢迎"+ui->editUserName->text() + \
