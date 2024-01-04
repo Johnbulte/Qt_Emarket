@@ -1,9 +1,6 @@
 # 一款基于Qt+Mysql的网上商城软件
 1. 编译Mysql驱动；
-# Qt使用Mysql数据库
-
-## 准备工作==（整个编译过程有点复杂，请耐心看完）==
-
+（整个编译过程有点复杂，请耐心看完）==
 1.   在[MySQL官网](https://dev.mysql.com/downloads/mysql/)下载相应版本的MySQL，这里使用最新版本进行演示。
 
 ![image-20240101200656500](https://gitee.com/minghenjiujie/picgo-md/raw/master/image-20240101200656500.png)
