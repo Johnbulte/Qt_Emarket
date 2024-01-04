@@ -43,7 +43,7 @@ void FormRegister::on_btnRegister_clicked()
     {
         QMessageBox::warning(this,"警告","用户名或密码不能为空");
     }
-    else if(ui->registerPassword->text().toStdString() != ui->registerPasswordOK->text().toStdString())
+    else if(ui->registerPassword->text() != ui->registerPasswordOK->text())
     {
         QMessageBox::warning(this,"错误","两次密码输入不一致请重新输入");
         ui->registerPasswordOK->clear();
