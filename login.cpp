@@ -1,6 +1,9 @@
 #include "login.h"
 #include "ui_login.h"
 #include <QSize>
+#include "formregister.h"
+#include <QPainter>
+#include "purchase.h"
 
 login::login(QWidget *parent)
     : QWidget(parent)
@@ -47,6 +50,7 @@ QString login::strToMd5(QString str)
     return strMd5;
 }
 
+
 // 注册功能的实现
 void login::on_btnRegister_clicked()
 {
@@ -76,6 +80,8 @@ void login::on_btnLogin_clicked()
         {
             QMessageBox::information(this,"欢迎回来","欢迎"+ui->editUserName->text() + \
                                      "登录在线商城系统");
+            purchase *purchaseshow = new purchase;
+            purchaseshow->show();
         }
         else
         {

@@ -6,7 +6,7 @@
 #include <QSqlDatabase>
 #include <QMessageBox>
 #include <QCryptographicHash>
-#include "formregister.h"
+#include <QPaintEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class login; }
@@ -24,7 +24,6 @@ public:
 
 private slots:
     void on_btnRegister_clicked();
-
     void on_btnLogin_clicked();
 
 private:
