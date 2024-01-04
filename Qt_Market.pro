@@ -11,15 +11,18 @@ CONFIG += c++17
 SOURCES += \
     formregister.cpp \
     main.cpp \
-    login.cpp
+    login.cpp \
+    purchase.cpp
 
 HEADERS += \
     formregister.h \
-    login.h
+    login.h \
+    purchase.h
 
 FORMS += \
     formregister.ui \
-    login.ui
+    login.ui \
+    purchase.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
