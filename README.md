@@ -139,3 +139,16 @@ Widget::~Widget()
 ## 注册失败后显示
 ![image](https://github.com/Johnbulte/Qt_Emarket/assets/39647360/47e0acbb-1787-4dda-a9ea-15a6c98119ec)
 
+## 购买界面的实现
+![image](https://github.com/Johnbulte/Qt_Emarket/assets/39647360/a2014f27-a635-4932-9c17-01044d708352)
+1. 查询数据库中的单价；
+2. 查询数据库的库存；
+3. 用户取消购买将数量改为1；
+   ![image](https://github.com/Johnbulte/Qt_Emarket/assets/39647360/7875612d-fae8-43b9-a936-e1401366e5e6)
+
+4. 购买成功显示购买成功文本，并显示总金额
+![image](https://github.com/Johnbulte/Qt_Emarket/assets/39647360/be309e64-c307-4955-bb65-7eab27e99520)
+
+
+
+
