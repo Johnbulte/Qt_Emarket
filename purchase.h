@@ -20,6 +20,14 @@ private slots:
 
     void on_comboBox_currentTextChanged(const QString &arg1);
 
+    void on_comboBox_2_currentTextChanged(const QString &arg1);
+
+    void on_spinBox_valueChanged(int arg1);
+
+    void on_btnBuy_clicked();
+
+    void on_btnCancel_clicked();
+
 private:
     void setvalue();
 
